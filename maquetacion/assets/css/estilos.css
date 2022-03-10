@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+	--dark-color:#191919;
+	--white-color:#FFFFFF;
+	--purple-color:rgb(117,41,149);
+	--blue-color:#00B2B1;
+	--gray-color:#828282;
+	--ligh-color:#F3F3F3;
+}
+
+
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    color: var(--purple-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+li{
+    list-style: none;
+    color: var(--dark-color);
+}
+
+
+/*Estilos HOME*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img{
+    max-width: 270px;
+    width: 100%;
+}
+
+.b-azul{
+    background-color: var(--blue-color);
+    border-radius: 5px;
+    border-color: var(--blue-color);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.b-azul:hover{
+    background: linear-gradient(#016e6e, #00b2b1);
+    transition: all 1s ease 1s;
+}
+
+
+.b-azul a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.b-morado{
+    background-color: var(--white-color);
+    border-radius: 5px;
+    border-color: var(--purple-color);
+    border-style: solid;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--purple-color);
+}
+
+.b-morado:hover{
+    background-color: var(--purple-color);
+    color: var(--white-color)
+}
+
+/* NAVEGADOR */
+
+nav{
+    display: flex;
+    background-color: var(--purple-color);
+}
+
+.item{
+    padding: 1rem;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.item:hover{
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 2px solid var(--blue-color);
+}
+
+/*AGENDA*/
+#agenda{
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.cita{
+    flex-basis: 70%;
+    background-image: url(../img/fondo.jpg);
+    padding: 2rem;
+}
+
+.cita h1{
+    color: var(--dark-color);
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+
+.cita h3{
+    color: var(--dark-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+.promocion{
+    flex-basis: 30%;
+    background-color: var(--purple-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+.promocion h1{
+    color: var(--white-color);
+    font-size: 28px;
+    text-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.promocion img{
+    border-radius: 50%;
+    border: 7px solid var(--white-color);
+}
+
+
+.tseccion{
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+#servicios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio{
+    margin: 10px;
+    text-align: center;
+    padding: 3rem;
+}
+
+
+.servicio img{
+    max-width: 200px;
+    width: 100%;
+}
+
+footer{
+    background-image: url(../img/fondo.jpg);
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+    background-color: rgb(117,41,149,0.4);
+}
+
+.foot{
+    text-align: center;
+}
+
+.foot h3{
+    color: var(--white-color);
+}
+
+
+.foot ul{
+    text-align: left;
+}
+
+.foot li{
+    color: var(--white-color);
+}
+
+
+/*-----------EQUIPO-------------*/
+
+.banner img{
+    max-width: 1905px;
+    width: 100%;
+}
+
+
+.tequipo{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    font-size: 32px;
+}
+
+#equipos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipo{
+    margin: 10px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.equipo img{
+    max-width: 250px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.equipo p{
+    text-align: center;
+}
+
+.equipo h3{
+    color: var(--dark-color);
+    font-size: 22px;
+    font-weight: 900;
+    text-shadow: 1px 1px 0.3px var(--dark-color);
+    margin: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+.equipo h2{
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bolder;
+}
+
+/*-----------CONTACTO-------------*/
+
+
+#informacion{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(241, 208, 241, 0.335);
+    align-items: center;
+
+}
+
+
+.banner-contacto img{
+    width: 1920px;
+}
+
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-input{
+    border: 3px solid var(--gray-color);
+    padding: 0.5rem;
+    outline: none;
+}
+
+.form-input:focus{
+    border: 3px solid var(--gray-color);
+}
+
+
+.form-input::placeholder{
+    font-size: 0.8rem;
+}
+
+.form-contacto{
+    flex-basis: 35%;
+    padding: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-label{
+    font-size: 20px;
+    color: var(--purple-color);
+    font-weight: 700;
+}
+
+.mapa{
+    box-shadow: 2px 2px 3px var(--gray-color);
+}
+
+.titulo-registro{
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    font-size: 22px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-vet{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--purple-color);
+    width: 1200px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.info-vet p{
+    margin: 1rem 4rem;
+    color: var(--white-color);
+    font-size: 20px;
+}
+
+#s-contacto{
+    margin: 0;
+    background-color: rgba(241, 208, 241, 0.335);
+}
+
+#banner img{
+    width: 100%;
+}
+
+#services{
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    flex-basis: 48%;
+}
+
+.img-service{
+    margin-right: 1rem;
+}
+
+.text-service h3{
+    color: var(--dark-color);
+    font-size: 24px;
+}
+
+
+.img-consulta{
+    width: 130px
+}

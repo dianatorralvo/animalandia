@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css">
+    <title>Producto</title>
+    <script src="https://kit.fontawesome.com/f25c3ae372.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/img/logo.jpg" alt="logo animalandia">
+            <span>
+                <a href="../dashboard.html"><br><strong>Home</strong>
+                <i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </span>
+        </div>
+        <div class="sesion">
+            <img src="../../assets/img/golden.jpg">
+            <span>
+                <strong>Bienvenido,</strong><br>Usuario
+                <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
+            </span>
+        </div>
+    </header>
+    <section id="dashboard">
+        <article class="menu-lado">
+            <ul>
+                <li class="item1"><a href="Usuario/usuario.html"><i class="fa-solid fa-user"></i>Usuarios</a></li>
+                <li class="item1"><a href="Producto/producto.html"><i class="fa-solid fa-users"></i>Clientes</a></li>
+                <li class="item1"><a href=""><i class="fa-solid fa-tag"></i>Productos</a></li></li>
+                <li class="item1"><a href=""><i class="fa-solid fa-cart-shopping"></i>Pedidos</a></li>
+                <li class="item1"><a href=""><i class="fa-solid fa-file"></i>Reportes</a></li>
+            </ul>
+        </article>
+        <article class="contenido">
+        <div class="producto">
+            <div class="tabla-intro">
+                <img src="../../assets/img/golden.jpg" alt="imagen de producto">
+                <h1>Gestion de productos</h1>
+                <a href="productoAdd.html" class="b-morado">Agregar</a>
+            </div>
+            <form class="frm-busqueda">
+                <input type="text" name="producto" placeholder="Ingresa el producto a consultar">
+                <button class="b-morado">Buscar</button>
+            </form>
+            <table>
+                <tr>
+                    <th>Id Producto</th>
+                    <th>Nombre</th>
+                    <th>Caracteristicas</th>
+                    <th>Precio</th>
+                    <th>Estado</th>
+                    <th colspan="2">Acciones</th>
+                </tr>
+                <tr>
+                    <td>xxxxx</td>
+                    <td>xxxx</td>
+                    <td>xxxxxx</td>
+                    <td>xxxx</td>
+                    <td>xxxxx</td>
+                    <td><a href="productoEditar.html"><img src="../../assets/img/modificar.png" width="30px"></a></td>
+                    <td><button class="b-azul">Eliminar</button></td>
+                </tr>
+            </table>
+        </div>
+        </article>
+    </section>
+</body>
+</html>
